@@ -17,23 +17,31 @@ class Queue {
     rear = -1;
   }
 
-    // we define another function that would check a condition
-    bool isFull() {
-    if (front == 0 && rear == SIZE - 1) {
-      return true;
+  // Check if the queue is full
+  bool isFull() {
+    if (front == 0 && rear == SIZE - 1) {  // If the front index is 0 and the rear index is equal to SIZE - 1, the queue is full
+      return true;  // Return true to indicate that the queue is full
     }
-    return false;
+    return false;  // Return false to indicate that the queue is not full
   }
 
-    // Another defined bool function that checks an empty condition
-    bool isEmpty() {
-    if (front == -1)
-      return true;
+  // Check if the queue is empty
+  bool isEmpty() {
+    if (front == -1)  // If the front index is -1, the queue is empty
+      return true;  // Return true to indicate that the queue is empty
     else
-      return false;
+      return false;  // Return false to indicate that the queue is not empty
   }
 
 
+/*
+  The enQueue function is used to insert an element into a queue. 
+  It first checks if the queue is full. If the queue is not full, 
+  it checks if the queue is empty. If the queue is empty, it sets the front index to 0. 
+  Then, it increments the rear index to the next position and inserts the element at that position. 
+  Finally, it prints a message indicating that the element has been inserted. 
+  If the queue is full, it prints a message indicating that the queue is full.
+*/
   void enQueue(int element) {
     if (isFull()) {  // Check if the queue is full
       cout << "Queue is full";  // Print a message indicating that the queue is full
