@@ -52,4 +52,18 @@ class Queue {
       cout << endl << "Inserted " << element << endl;  // Print a message indicating that the element has been inserted
     }
   }
+
+  void display() {
+    /* Function to display elements of Queue */
+    int i;
+    if (isEmpty()) {  // Check if the queue is empty
+      cout << endl << "Empty Queue" << endl;  // Print a message indicating that the queue is empty
+    } else {
+      cout << endl << "Front index-> " << front;  // Print the front index of the queue
+      cout << endl << "Items -> ";
+      for (i = front; i <= rear; i++)  // Iterate over the elements in the queue
+        cout << items[i] << "  ";  // Print each element
+      cout << endl << "Rear index-> " << rear << endl;  // Print the rear index of the queue
+    }
+  }
 }
