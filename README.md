@@ -1,1 +1,2 @@
-Cpp lecturing by adam.
+CPP lecture source code.
+- Adam.
