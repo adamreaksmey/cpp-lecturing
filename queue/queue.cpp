@@ -44,21 +44,21 @@ class Queue {
 
   int deQueue() {
     int element;
-    if (isEmpty()) {
-      cout << "Queue is empty" << endl;
-      return (-1);
+    if (isEmpty()) {  // Check if the queue is empty
+      cout << "Queue is empty" << endl;  // Print a message indicating that the queue is empty
+      return (-1);  // Return a sentinel value (-1) to indicate an error or an empty queue
     } else {
-      element = items[front];
-      if (front >= rear) {
-        front = -1;
-        rear = -1;
+      element = items[front];  // Store the element at the front of the queue
+      if (front >= rear) {  // Check if there is only one element in the queue
+        front = -1;  // Reset the front index to -1
+        rear = -1;  // Reset the rear index to -1
       } 
-      /* Q has only one element, so we reset the queue after deleting it. */
+      /* If there is more than one element in the queue, we simply move the front index forward. */
       else {
-        front++;
+        front++;  // Move the front index forward
       }
-      cout << endl << "Deleted -> " << element << endl;
-      return (element);
+      cout << endl << "Deleted -> " << element << endl;  // Print the deleted element
+      return (element);  // Return the deleted element
     }
   }
 
