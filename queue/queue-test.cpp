@@ -24,4 +24,12 @@ class Queue {
     }
     return false;
   }
+
+    // Another defined bool function that checks an empty condition
+    bool isEmpty() {
+    if (front == -1)
+      return true;
+    else
+      return false;
+  }
 }
