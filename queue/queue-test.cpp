@@ -32,4 +32,16 @@ class Queue {
     else
       return false;
   }
+
+
+  void enQueue(int element) {
+    if (isFull()) {  // Check if the queue is full
+      cout << "Queue is full";  // Print a message indicating that the queue is full
+    } else {
+      if (front == -1) front = 0;  // If the queue is empty, set the front index to 0
+      rear++;  // Move the rear index to the next position
+      items[rear] = element;  // Insert the element at the rear position in the queue
+      cout << endl << "Inserted " << element << endl;  // Print a message indicating that the element has been inserted
+    }
+  }
 }
