@@ -81,10 +81,13 @@ class Queue {
 int main() {
   Queue q;
 
-  //deQueue is not possible on empty queue
+  // we can run this deQueue with an
+  // empty array first to see that it
+  // is not possible on empty queue
   q.deQueue();
 
-  //enQueue 5 elements
+  // then run the enQueue again but with 5 elements
+  // on insertion
   q.enQueue(1);
   q.enQueue(2);
   q.enQueue(3);

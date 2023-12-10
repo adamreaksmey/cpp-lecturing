@@ -19,7 +19,8 @@ class Queue {
 
   // Check if the queue is full
   bool isFull() {
-    if (front == 0 && rear == SIZE - 1) {  // If the front index is 0 and the rear index is equal to SIZE - 1, the queue is full
+    if (front == 0 && rear == SIZE - 1) {  // If the front index 
+    // is 0 and the rear index is equal to SIZE - 1, the queue is full
       return true;  // Return true to indicate that the queue is full
     }
     return false;  // Return false to indicate that the queue is not full
@@ -47,9 +48,12 @@ class Queue {
       cout << "Queue is full";  // Print a message indicating that the queue is full
     } else {
       if (front == -1) front = 0;  // If the queue is empty, set the front index to 0
-      rear++;  // Move the rear index to the next position
-      items[rear] = element;  // Insert the element at the rear position in the queue
-      cout << endl << "Inserted " << element << endl;  // Print a message indicating that the element has been inserted
+      // Move the rear index to the next position
+      rear++;
+       // Insert the element at the rear position in the queue
+      items[rear] = element;
+      // Print a message indicating that the element has been inserted
+      cout << endl << "Inserted " << element << endl;
     }
   }
 
