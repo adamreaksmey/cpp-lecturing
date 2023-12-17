@@ -55,9 +55,11 @@ void swap(int &a, int &b)
  *  we must compute it from the inside first.
 */
 
+
 void bubbleSort(int arr[], int n)
 {
-    // Function to perform Bubble Sort on an array
+    // and now inside, of it, we are going to write a
+    // for loop like below
 
     /**
         `i` < `n` - 1: The loop continues as long as the pass number `i`
