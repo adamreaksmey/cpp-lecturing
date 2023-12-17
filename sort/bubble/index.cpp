@@ -29,16 +29,26 @@ void swap(int &a, int &b)
 
     Before swapping, the current value of variable `a` is stored in a temporary
     variable named `temp`. This step is crucial to prevent the loss of the 
-    original value of a during the swap.
+    original value of `a` during the swap.
 */
 
 /*
+    Swapping Values:
 
     The value of `a` is then assigned the value of `b`, effectively replacing the original 
     value of `a` with the value of `b`.
     The value of `b` is assigned the original value of `a`, which was stored in the 
     temporary variable `temp`. This completes the swap, and now `b` holds the original value of `a`.
 
+*/
+
+/*
+    Result:
+
+    After the swap function is executed, the values of variables `a` and `b` have been swapped.
+    This swapping mechanism is used in sorting algorithms like Bubble Sort to rearrange 
+    elements in an array by comparing and swapping adjacent elements until 
+    the entire array is sorted.
 */
 
 /**
