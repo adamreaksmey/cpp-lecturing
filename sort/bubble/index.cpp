@@ -59,7 +59,18 @@ void bubbleSort(int arr[], int n)
 {
     // Function to perform Bubble Sort on an array
 
-    // Outer loop for each pass
+    /**
+        `i` < `n` - 1: The loop continues as long as the pass number `i`
+        is less than `n` - 1. Here's the rationale behind this condition:
+
+        `n` : Represents the total number of elements in the array.
+        `i` : Represents the pass number. The algorithm performs a pass for 
+        each element in the array, excluding the last element after each pass. 
+        This is because, after each pass, the largest unsorted element is 
+        correctly placed at the end of the array.
+        So, `n` - 1 ensures that the loop stops when the 
+        last pass is reached, and the array is fully sorted.
+    */
     for (int i = 0; i < n - 1; ++i)
     {
         /**
