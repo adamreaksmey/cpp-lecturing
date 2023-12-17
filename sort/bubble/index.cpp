@@ -87,6 +87,7 @@ void bubbleSort(int arr[], int n)
             in their final sorted positions. This optimization reduces the number of 
             unnecessary comparisons, making the algorithm more efficient.
         */
+       
         for (int j = 0; j < n - 1 - i; ++j)
         {
             // Comparing elements from the array by taking
