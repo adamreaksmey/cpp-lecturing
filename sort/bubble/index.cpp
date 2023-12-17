@@ -1,7 +1,3 @@
-/**
- *  Let's first initialize with our very common set up of
- *  every C++ namespace.
- */
 #include <iostream>
 using namespace std;
 
