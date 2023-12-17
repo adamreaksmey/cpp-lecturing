@@ -1,2 +1,2 @@
 CPP lecture source code.
-- Adam.
+- I lecture some CPP.
