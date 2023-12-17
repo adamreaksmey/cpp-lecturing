@@ -50,6 +50,9 @@ void swap(int &a, int &b)
 /**
  *  Next, let's define our sorting function!
  *  The bubbleSort.
+ * 
+ *  To understand the nested for loops,
+ *  we must compute it from the inside first.
 */
 
 void bubbleSort(int arr[], int n)
@@ -59,12 +62,22 @@ void bubbleSort(int arr[], int n)
     // Outer loop for each pass
     for (int i = 0; i < n - 1; ++i)
     {
-        // Last i elements are already in place, so no need to check them
+        /**
+            `j < n - 1 - i` : The loop continues as long as the index `j` is less than `n - 1 - i`. 
+            Here's the rationale behind this condition:
+            `n` : Represents the total number of elements in the array.
+            `i` : Represents the pass number. After each pass, the largest unsorted element
+            is correctly placed at the end of the array. Therefore, in sorting rounds, 
+            there is no need to check the last `i` elements because they are already in their correct positions.
 
-        // Inner loop for each comparison in the current pass
+            So, `n - 1 - i` ensures that the loop doesn't compare elements that are already 
+            in their final sorted positions. This optimization reduces the number of 
+            unnecessary comparisons, making the algorithm more efficient.
+        */
         for (int j = 0; j < n - 1 - i; ++j)
         {
-            // Compare adjacent elements
+            // Comparing elements from the array by taking
+            // the first 2 elements.
             if (arr[j] > arr[j + 1])
             {
                 // Swap if they are in the wrong order
