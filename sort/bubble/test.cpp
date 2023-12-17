@@ -26,3 +26,15 @@ void bubbleSort(int arr[], int n)
     }
 }
 
+// Compilation :
+int main()
+{
+    // Initializing Array to be sorted
+    int arr[] = {64, 34, 25, 12, 22, 11, 90};
+
+    // calculates the number of elements in the array 
+    // `arr` and assigns the result to the variable `n`. 
+    // This step is necessary because the size of an array 
+    // is not directly available as a variable and needs to be computed.
+    int n = sizeof(arr) / sizeof(arr[0]);
+}
