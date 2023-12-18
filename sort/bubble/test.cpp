@@ -32,9 +32,33 @@ int main()
     // Initializing Array to be sorted
     int arr[] = {64, 34, 25, 12, 22, 11, 90};
 
-    // calculates the number of elements in the array 
-    // `arr` and assigns the result to the variable `n`. 
-    // This step is necessary because the size of an array 
+    // calculates the number of elements in the array
+    // `arr` and assigns the result to the variable `n`.
+    // This step is necessary because the size of an array
     // is not directly available as a variable and needs to be computed.
     int n = sizeof(arr) / sizeof(arr[0]);
+
+    // This block is optional. You can
+    // output the original array to see
+    // and compare after the sorted.
+    cout << "Original Array: ";
+    for (int i = 0; i < n; i++)
+    {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+
+    // Now, call the bubbleSort function and let it sort
+    // your array!
+    bubbleSort(arr, n);
+
+    // Display the sorted array
+    cout << "Sorted Array: ";
+    for (int i = 0; i < n; i++)
+    {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+
+    return 0;
 }
