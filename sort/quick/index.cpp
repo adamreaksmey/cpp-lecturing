@@ -1,4 +1,5 @@
 #include <iostream>
+#include "sort.h"
 using namespace std;
 
 void swap(int &a, int &b)
@@ -37,26 +38,26 @@ void quickSort(int arr[], int low, int high)
     }
 }
 
-int main()
-{
-    int arr[] = {9, -3, 5, 2, 1, 0, 7};
-    int size = sizeof(arr) / sizeof(arr[0]);
+// int main()
+// {
+//     int arr[] = {9, -3, 5, 2, 1, 0, 7};
+//     int size = sizeof(arr) / sizeof(arr[0]);
 
-    cout << "Original array: ";
-    for (int i = 0; i < size; i++)
-    {
-        cout << arr[i] << " ";
-    }
-    cout << endl;
+//     cout << "Original array: ";
+//     for (int i = 0; i < size; i++)
+//     {
+//         cout << arr[i] << " ";
+//     }
+//     cout << endl;
 
-    quickSort(arr, 0, size - 1);
+//     quickSort(arr, 0, size - 1);
 
-    cout << "Sorted array: ";
-    for (int i = 0; i < size; i++)
-    {
-        cout << arr[i] << " ";
-    }
-    cout << endl;
+//     cout << "Sorted array: ";
+//     for (int i = 0; i < size; i++)
+//     {
+//         cout << arr[i] << " ";
+//     }
+//     cout << endl;
 
-    return 0;
-}
+//     return 0;
+// }

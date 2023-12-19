@@ -1,6 +1,7 @@
-#ifndef MY_FUNCTIONS_H
-#define MY_FUNCTIONS_H
+// bubble/sort.h
+#ifndef BUBBLE_SORT_H
+#define BUBBLE_SORT_H
 
-void bubbleSort(); // Function prototype
+void bubbleSort(int arr[], int n);
 
-#endif
+#endif // BUBBLE_SORT_H

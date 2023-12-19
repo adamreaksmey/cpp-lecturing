@@ -2,14 +2,6 @@
 #include "sort.h"
 using namespace std;
 
-void swap(int &a, int &b)
-{
-
-    int temp = a;
-    a = b;
-    b = temp;
-}
-
 void bubbleSort(int arr[], int n)
 {
     for (int i = 0; i < n - 1; ++i)
@@ -24,6 +16,13 @@ void bubbleSort(int arr[], int n)
             }
         }
     }
+}
+
+void swap(int &a, int &b)
+{
+    int temp = a;
+    a = b;
+    b = temp;
 }
 
 int main()
