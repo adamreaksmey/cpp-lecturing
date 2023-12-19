@@ -1,9 +1,7 @@
 #include <iostream>
+#include "sort.h"
 using namespace std;
 
-/*
-    Let's first start by defining a swap function like below:
-*/
 void swap(int &a, int &b)
 {
 
