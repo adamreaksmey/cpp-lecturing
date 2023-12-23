@@ -64,7 +64,7 @@ int main()
     // Calculate the elapsed time for selection sort in seconds
     double selectionSortElapsedTime = double(selectionSortEndTime - selectionSortStartTime) / CLOCKS_PER_SEC;
 
-    cout << "Elapsed Time for Selection Sort: " << selectionSortElapsedTime << " seconds" << endl;
+    cout << "Elapsed Time: " << selectionSortElapsedTime << " seconds" << endl;
 
     return 0;
 }
